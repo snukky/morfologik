@@ -16,11 +16,13 @@ Code was tested only with Ruby MRI 1.9.
 
 ## Installation
 
-Download source code and run:
+From gem repository:
 
-    rake test
-    rake build
-    rake install
+    $ gem install morfologik
+
+Or download source code and run:
+
+    $ rake test build install
 
 ## Usage
 
@@ -28,23 +30,23 @@ Basic usage with `#stem` or `#lemmatize` method:
 
     Morfologik.new.stem("ma")
     # => { 
-      "ma" => [ 
-       {
-             :stem => "mieć",
-         :category => "verb",
-           :values => [
-             { "tense" => "fin", "number" => "sg", "person" => "ter", "aspect" => "imperf" }
-           ]
-       },
-       {
-             :stem => "mój",
-         :category => "adj",
-           :values => [
-             { "number" => "sg", "case" => "nom", "gender" => "f", "degree" => "pos" },
-             { "number" => "sg", "case" => "voc", "gender" => "f", "degree" => "pos" }
-           ]
-       }
-    }
+    # "ma" => [ 
+    #  {
+    #        :stem => "mieć",
+    #    :category => "verb",
+    #      :values => [
+    #        { "tense" => "fin", "number" => "sg", "person" => "ter", "aspect" => "imperf" }
+    #      ]
+    #  },
+    #  {
+    #        :stem => "mój",
+    #    :category => "adj",
+    #      :values => [
+    #        { "number" => "sg", "case" => "nom", "gender" => "f", "degree" => "pos" },
+    #        { "number" => "sg", "case" => "voc", "gender" => "f", "degree" => "pos" }
+    #      ]
+    #  }
+    # }
 
 If only stems or categories are needed, use `#stem_simple` or `#categories` method respectively.
 
