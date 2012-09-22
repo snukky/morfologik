@@ -24,7 +24,7 @@ Download source code and run:
 
 ## Usage
 
-Basic usage with `#stem` or '#lemmatize' method:
+Basic usage with `#stem` or `#lemmatize` method:
 
     Morfologik.new.stem("ma")
     # => { 
