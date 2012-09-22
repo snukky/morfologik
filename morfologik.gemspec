@@ -5,7 +5,9 @@ Gem::Specification.new do |s|
   s.authors     = ["snukky"]
   s.email       = ['snk987@gmail.com']
   s.homepage    = 'http://github.com/snukky/morfologik'
-  s.summary     = "Ruby MRI bindings for morfologik-stemming library."
+  s.summary     = "Ruby bindings for Morfologik."
+  s.description = "Ruby MRI bindings for morfologik-stemming library (Polish morphological " +
+                  "analyzer)  written in Java."
   s.files       = %w{lib/morfologik.rb 
                      lib/morfologik/output_parser.rb 
                      lib/morfologik/tagset_parser.rb
